@@ -15,7 +15,6 @@ build:
 	npm run build --prefix client
 
 run:
-	@pip3 install gunicorn; \
 	echo 'Ruuuuuun on port:${PORT}'; \
 	gunicorn app:app -b '0.0.0.0:${PORT}'
 
@@ -23,8 +22,7 @@ freeze:
 	pip3 freeze > requirements.txt
 
 install:
+	npm install --prefix client; \
+	pip install -r requirements.txt; \
 	virtualenv venv; \
 	source venv/bin/activate; \
-	pip3 install gunicorn; \
-	pip3 install flask; \
-	pip3 install flask-sqlalchemy
