@@ -15,7 +15,8 @@ build:
 	npm run build --prefix client
 
 run:
-	@echo 'Ruuuuuun on port:${PORT}' && \
+	@pip3 install gunicorn; \
+	echo 'Ruuuuuun on port:${PORT}'; \
 	gunicorn app:app -b '0.0.0.0:${PORT}'
 
 freeze:
