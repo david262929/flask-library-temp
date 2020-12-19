@@ -31,7 +31,7 @@ def get_file(filename):  # pragma: no cover
 @app.route('/')
 def index():
 	print('wqwqqqqq')
-	return render_template("index.html")
+	return render_template("index.html", flask_token='token-token-_-token-token')
 
 # @app.route('/', defaults={'path': ''})
 # @app.route('/<path:path>')
