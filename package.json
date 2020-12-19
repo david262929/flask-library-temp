@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "start": "echo 'Start Plug buildpack'",
-    "build": " echo 'Before Build Plug buildpack' && npm install --prefix client && npm run build --prefix client && echo 'After Build Plug buildpack'"
+    "build": " echo 'Before Build Plug buildpack' && make build && echo 'After Build Plug buildpack'"
   }
 }
