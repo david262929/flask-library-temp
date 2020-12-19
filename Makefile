@@ -22,7 +22,7 @@ freeze:
 	pip3 freeze > requirements.txt
 
 install:
-	npm install --prefix client; \
+	make build; \
 	pip install -r requirements.txt; \
 	virtualenv venv; \
 	source venv/bin/activate; \
