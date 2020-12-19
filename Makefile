@@ -16,7 +16,7 @@ build:
 
 run:
 	@echo 'Ruuuuuun on port:${PORT}' && \
-	gunicorn app:app -b '127.0.0.1:${PORT}'
+	gunicorn app:app -b '0.0.0.0:${PORT}'
 
 freeze:
 	pip3 freeze > requirements.txt
