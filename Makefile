@@ -16,7 +16,8 @@ build:
 
 run:
 	@make build && \
-	gunicorn app:app -b 'http://0.0.0.0:${NODE_PORT}'
+	echo 'Ruuuuuun on port:${PORT}' && \
+	gunicorn app:app -b 'http://0.0.0.0:${PORT}'
 
 freeze:
 	pip3 freeze > requirements.txt
