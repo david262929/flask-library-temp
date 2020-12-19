@@ -24,5 +24,6 @@ freeze:
 install:
 	virtualenv venv; \
 	source venv/bin/activate; \
+	pip3 install gunicorn; \
 	pip3 install flask; \
 	pip3 install flask-sqlalchemy
