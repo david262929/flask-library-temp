@@ -10,8 +10,13 @@ dbInit:
 dev:
 	@source venv/bin/activate && python3 run.py
 
+build:
+	@npm install --prefix client && \
+	npm run build --prefix client
+
 run:
-	gunicorn app:app
+	@make build && \
+	gunicorn app:app -b ${PORT}
 
 freeze:
 	pip3 freeze > requirements.txt
