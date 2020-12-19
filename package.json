@@ -1,0 +1,9 @@
+{
+  "name": "plug-for-nodejs-buildpack",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "echo 'Start Plug buildpack'",
+    "build": "echo 'Build Plug buildpack'"
+  }
+}
