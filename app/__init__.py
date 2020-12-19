@@ -10,7 +10,7 @@ from flask_bootstrap import Bootstrap
 # from flask_pymongo import PyMongo
 # from flask_login import LoginManager
 
-app = Flask(__name__, template_folder='../client/build') #,
+app = Flask(__name__) #, template_folder='../client/build'
 
 app.config.from_object('app.configuration.DevelopmentConfig')
 
