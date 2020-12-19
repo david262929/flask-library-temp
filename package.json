@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "start": "echo 'Start Plug buildpack'",
-    "build": "echo 'Build Plug buildpack'"
+    "build": " echo 'Before Build Plug buildpack' && make build && echo 'After Build Plug buildpack'"
   }
 }

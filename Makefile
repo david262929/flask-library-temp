@@ -15,8 +15,7 @@ build:
 	npm run build --prefix client
 
 run:
-	@make build && \
-	echo 'Ruuuuuun on port:${PORT}' && \
+	@echo 'Ruuuuuun on port:${PORT}' && \
 	gunicorn app:app -b 'http://0.0.0.0:${PORT}'
 
 freeze:
